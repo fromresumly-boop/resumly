@@ -4,7 +4,7 @@ import { useResume } from './context/ResumeContext';
 import AuthPage from './pages/AuthPage';
 import TemplateSelectorPage from './pages/TemplateSelectorPage';
 import ResumeBuilderPage from './pages/ResumeBuilderPage';
-import LandingPage from './pages/Landingpage';
+import LandingPage from './pages/LandingPage';
 
 
 import DashboardPage from './pages/DashboardPage';
