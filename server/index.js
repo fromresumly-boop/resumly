@@ -30,7 +30,7 @@ if (isProduction) {
   app.use(express.static(distPath));
 
   // For any non-API route, return the React app (SPA support)
-  app.get('*', (req, res) => {
+  app.get('/*', (req, res) => {
     res.sendFile(path.join(distPath, 'index.html'));
   });
 }
