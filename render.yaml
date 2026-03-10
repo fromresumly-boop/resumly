@@ -1,0 +1,16 @@
+services:
+  - type: web
+    name: resumly
+    env: node
+    buildCommand: npm install && npm run build
+    startCommand: npm run start:prod
+    envVars:
+      - key: NODE_ENV
+        value: production
+      - key: PORT
+        value: 5000
+      # Add the following in Render's dashboard (don't store secrets here):
+      # - EMAIL_USER
+      # - EMAIL_PASS
+      # - VITE_SUPABASE_URL
+      # - VITE_SUPABASE_ANON_KEY
